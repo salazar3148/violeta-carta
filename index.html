@@ -15,7 +15,7 @@
   <div class="container">
     <img src="logo2.png" alt="Violeta Logo" class="logo">
     <nav>
-        
+
       <a href="#licores">Licores</a>
       <a href="#bebidas">Bebidas</a>
       <a href="#cervezas">Cervezas</a>
@@ -57,7 +57,7 @@
   <section id="tequilas">
     <h2>Tequilas</h2>
     <div class="item"><span>1800 AÑEJO</span><span>$423.900</span></div>
-    <div class="item"><span>1800 REPOSADO</span><span>$378.900</span></div>
+    <div class="item"><span>1800 \\REPOSADO</span><span>$378.900</span></div>
     <div class="item"><span>JOSE CUERVO REPOSADO</span><span>$147.900</span></div>
   </section>
 
@@ -91,6 +91,25 @@
     <div class="item"><span>SMIRNOFF MANZANA</span><span>$13.900</span></div>
     <div class="item"><span>SMIRNOFF RED</span><span>$13.900</span></div>
   </section>
+
+  <script>
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        
+        const scrollPercent = scrollY / maxScroll;
+
+        const violetStart = 10 + scrollPercent * 20;  // de 10% a 30%
+        const violetEnd = 90 - scrollPercent * 20;    // de 90% a 70%
+    
+        // Modificamos la cantidad de violeta
+        document.body.style.background = `linear-gradient(to right,
+          #ed008c 0%,
+          black ${violetStart}%,
+          black ${violetEnd}%,
+          #ed008c 100%)`;
+    });
+    </script>
 </main>
 
 

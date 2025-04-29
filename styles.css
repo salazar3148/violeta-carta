@@ -10,12 +10,6 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-    background: 
-      linear-gradient(135deg, #0F0F0F 40%, #ed008c 100%),
-      url('https://www.transparenttextures.com/patterns/stardust.png');
-    background-repeat: repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
     color: #fff;
     line-height: 1.6;
   }
