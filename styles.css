@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
     
   }
+
+  
   
   body {
     font-family: 'Montserrat', sans-serif;
@@ -43,6 +45,8 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
+  z-index: 2;
   }
   
   header .container {
@@ -58,7 +62,7 @@
   }
   
   nav a {
-    margin: 0 10px;
+    margin-right: 7px;
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -111,6 +115,8 @@
   
   
   footer {
+    position: relative;
+    z-index: 2;
     text-align: center;
     padding: 20px;
     background: #111;
