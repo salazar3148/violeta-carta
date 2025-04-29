@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<div class="background">
+    
+</div>
 <header>
   <div class="container">
     <img src="logo2.png" alt="Violeta Logo" class="logo">
@@ -99,11 +101,11 @@
         
         const scrollPercent = scrollY / maxScroll;
 
-        const violetStart = 10 + scrollPercent * 20;  // de 10% a 30%
-        const violetEnd = 90 - scrollPercent * 20;    // de 90% a 70%
+        const violetStart = 20 + scrollPercent * 20;  // de 10% a 30%
+        const violetEnd = 80 - scrollPercent * 20;    // de 90% a 70%
     
         // Modificamos la cantidad de violeta
-        document.body.style.background = `linear-gradient(to right,
+        document.querySelector('.background').style.background = `linear-gradient(to right,
           #ed008c 0%,
           black ${violetStart}%,
           black ${violetEnd}%,
