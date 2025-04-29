@@ -30,8 +30,8 @@
     z-index: -1; /* Detrás de todo */
     background: linear-gradient(to right,
       #ed008c 0%,
-      #000000 25%,
-      #000000 75%,
+      #000000 26%,
+      #000000 74%,
       #ed008c 100%);
     opacity: 0.25;
     pointer-events: none;
